@@ -9,7 +9,7 @@ The purpose of this project is to build an adapted data model thanks to python t
 
 2. This project is run with **docker**.
     ```
-    docker run -d -p 8080:8080 -v /path/DEND-Data_Pipeline_Airflow/dags:/usr/local/airflow/dags -v /path/DEND-Data_Pipeline_Airflow/plugins:/usr/local/airflow/plugins -v --name airflow puckel/docker-airflow webserver
+    docker run -d -p 8080:8080 -v /path/to/project/dags:/usr/local/airflow/dags -v /path/to/project/plugins:/usr/local/airflow/plugins -v to/project/requirements.txt:/requirements.txt --name airflow puckel/docker-airflow webserver
     ```
 
 And everything is setup to launch AirFlow.
